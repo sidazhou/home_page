@@ -7,6 +7,11 @@ import AppController from './components/AppController.jsx';
 import AboutMe from './components/AboutMe.jsx';
 import ContactMe from './components/ContactMe.jsx';
 
+import ProjectsController from './components/projects/ProjectsController.jsx';
+import WebController from './components/projects/web/WebController.jsx';
+import ScienceController from './components/projects/science/ScienceController.jsx';
+
+
 // tap plugin for material ui, remove upon release of react 1.x
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
@@ -26,12 +31,14 @@ ReactDOM.render(
     <Redirect from="/" to="/about" />
     <Route path="/" component={AppController}>
       {/*<IndexRoute component={AboutMe}/>*/}
-      <Route path="/about" component={AboutMe} />
-      <Route path="/contact" component={ContactMe} />
-      {/*
-      <Route path="/project/web" component={Widgets1} />
-      <Route path="/project/science" component={Widgets1} />
-      */}
+      <Route path="about" component={AboutMe} />
+      <Route path="contact" component={ContactMe} />
+      <Route path="projects" component={ProjectsController}>
+        <IndexRoute component={WebController}/>
+        <Route path="web" component={WebController} />
+        <Route path="science" component={ScienceController} />
+      </Route>
+
       <Route path="*" component={PageNotFound} />
     </Route>
   </Router>, document.getElementById('react_entry_point'));

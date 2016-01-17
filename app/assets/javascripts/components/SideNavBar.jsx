@@ -13,11 +13,11 @@ export default class SideNavBar extends React.Component {
           <NavItem eventKey={1} >About me</NavItem>
         </LinkContainer>
 
-        <LinkContainer to="/project/web">
+        <LinkContainer to="/projects/web">
           <NavItem eventKey={2} >Projects (Web)</NavItem>
         </LinkContainer>
 
-        <LinkContainer to="/project/science">
+        <LinkContainer to="/projects/science">
           <NavItem eventKey={3} >Projects (Science)</NavItem>
         </LinkContainer>
 
