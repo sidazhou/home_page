@@ -1,11 +1,11 @@
 import React from 'react';
-import Widgets from './Widgets.jsx';
+import { Jumbotron } from 'react-bootstrap';
 import TopNavBar from './TopNavBar.jsx';
 import SideNavBar from './SideNavBar.jsx';
 
 // this would be the smart component, that feeds data to child, which are dumb
 
-export default class WidgetsController extends React.Component {
+export default class AppController extends React.Component {
   constructor(props) {
     super(props);
     this.state = { message4widget3: ['default_state_1', 'default_state_2'] };
@@ -36,7 +36,9 @@ export default class WidgetsController extends React.Component {
         </div>
 
         <div className="col-md-10">
-        <p>TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT </p>
+          <Jumbotron>
+            {this.props.children}
+          </Jumbotron>
         </div>
       </div>
       </div>

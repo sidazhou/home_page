@@ -4,15 +4,6 @@ div {
   background-color: lightblue;
   border: 1px solid blue;
 
-
-.col-md-12>.navbar.navbar-default {
-  background-color: #45619d;
-}
-
-body {
-  background: #f3f3f3;
-}
-
  #search_form {
    margin-left: 15%;
  }
@@ -21,11 +12,7 @@ body {
   width: 230px;
 }
 
-.jumbotron {
-  background-color: white;
-  height: 600px;
-  overflow: auto;
-}
+
 
 
 .col-md-12 .navbar-header img{

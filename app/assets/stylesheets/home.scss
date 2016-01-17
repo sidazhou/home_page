@@ -17,5 +17,18 @@ body { /*global*/
       }
     }
   }
+
+  .jumbotron {
+    background-color: white;
+    height: 600px;
+    overflow: auto;
+    padding: 60px 48px 60px 48px;
+
+    hr {
+      margin: 2px 0;
+      width: 33%;
+    }
+  }
+
 }
 

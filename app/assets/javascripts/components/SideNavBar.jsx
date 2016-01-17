@@ -8,10 +8,10 @@ export default class SideNavBar extends React.Component {
   render() {
     return (
       <Nav className="side-nav-bar" bsStyle="pills" stacked activeKey={1} onSelect={this.handleSelect}>
-        <NavItem eventKey={1} href="/home">About me</NavItem>
+        <NavItem eventKey={1} href="/about">About me</NavItem>
         <NavItem eventKey={2} >Projects (Web)</NavItem>
         <NavItem eventKey={3} >Projects (Science)</NavItem>
-        <NavItem eventKey={4} >Contact me</NavItem>
+        <NavItem eventKey={4} href="/#/contact">Contact me</NavItem>
         {/*<Navbar.Text> <h1>ImgMissing</h1> </Navbar.Text>*/}
         <Well>
 {/*          <img src="/images/sidazhou.png" alt="" width="120px" class="img-responsive img-rounded">
