@@ -28,14 +28,13 @@ const PageNotFound = React.createClass({
 
 ReactDOM.render(
   <Router history={browserHistory}>
-    <Redirect from="/" to="/about" />
+    <Redirect from="/" to="about" />
     <Route path="/" component={AppController}>
       {/*<IndexRoute component={AboutMe}/>*/}
       <Route path="about" component={AboutMe} />
       <Route path="contact" component={ContactMe} />
       <Route path="projects" component={ProjectsController}>
-        <IndexRoute component={WebController}/>
-        <Route path="web" component={WebController} />
+        <Route path="web(/:id)" component={WebController} />
         <Route path="science" component={ScienceController} />
       </Route>
 

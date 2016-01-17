@@ -4,11 +4,9 @@ import { Navbar, Nav, NavItem, Input, Button, Well } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 export default class SideNavBar extends React.Component {
-  handleSelect() {}
-
   render() {
     return (
-      <Nav className="side-nav-bar" bsStyle="pills" stacked activeKey={1} onSelect={this.handleSelect}>
+      <Nav className="side-nav-bar" bsStyle="pills" stacked activeKey={1} >
         <LinkContainer to="/about">
           <NavItem eventKey={1} >About me</NavItem>
         </LinkContainer>
