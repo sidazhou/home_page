@@ -13,4 +13,6 @@ visit `localhost:3000`
 
 == README
 
-Please see ./my_notes.txt for my notes about this scaffold.
+Rewrite of my homepage in react+rails.
+
+Please see http://www.sidazhou.com

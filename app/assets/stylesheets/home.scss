@@ -1,0 +1,21 @@
+body { /*global*/
+  background: #f3f3f3;
+}
+
+.home {
+  .top-nav-bar {
+    background: #45619d;
+    .navbar-text {
+    color: white;
+    }
+  }
+
+  .side-nav-bar {
+    .well {
+      hr {
+        margin: 2px 0;
+      }
+    }
+  }
+}
+
