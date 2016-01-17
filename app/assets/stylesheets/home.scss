@@ -1,12 +1,32 @@
+/*http://stackoverflow.com/questions/20255711/ruby-on-rails-bootstrap-glyphicons-not-working/22316818#22316818*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(asset_path('glyphicons-halflings-regular.eot'));
+  src: url(asset_path('glyphicons-halflings-regular.eot?#iefix')) format('embedded-opentype'), url(asset_path('glyphicons-halflings-regular.woff')) format('woff'), url(asset_path('glyphicons-halflings-regular.ttf')) format('truetype'), url(asset_path('glyphicons-halflings-regular.svg#glyphicons_halflingsregular')) format('svg');
+}
+
 body { /*global*/
   background: #f3f3f3;
+  border-radius: 6px;
 }
 
 .home {
+  width: 85%;
+  margin: auto;
+
   .top-nav-bar {
     background: #45619d;
+    margin-top: -6px;
+
     .navbar-text {
     color: white;
+    }
+
+    .manual-adjustment-1 {
+      line-height: 40px;
+    }
+    .manual-adjustment-2 {
+      line-height: 30px;
     }
   }
 
@@ -14,6 +34,11 @@ body { /*global*/
     .well {
       hr {
         margin: 2px 0;
+      }
+
+      img {
+        width: 120px;
+        border-radius: 6px;
       }
     }
   }
@@ -29,8 +54,8 @@ body { /*global*/
     background-color: white;
     height: 600px;
     overflow: auto;
-    padding: 60px 48px 60px 48px;
-
+    padding: 60px 45px 60px 45px;
+    margin-right: 45px;
     hr {
       margin: 2px 0;
       width: 33%;

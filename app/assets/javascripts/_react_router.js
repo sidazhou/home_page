@@ -1,7 +1,7 @@
 // require(''); // somehow this is necessary, why?! Otherwise we get: "SyntaxError: Unexpected token import"
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute, Redirect } from 'react-router';
 
 import AppController from './components/AppController.jsx';
 import AboutMe from './components/AboutMe.jsx';
@@ -23,8 +23,9 @@ const PageNotFound = React.createClass({
 
 ReactDOM.render(
   <Router history={browserHistory}>
+    <Redirect from="/" to="/about" />
     <Route path="/" component={AppController}>
-      <IndexRoute component={AboutMe}/>
+      {/*<IndexRoute component={AboutMe}/>*/}
       <Route path="/about" component={AboutMe} />
       <Route path="/contact" component={ContactMe} />
       {/*

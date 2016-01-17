@@ -8,30 +8,34 @@ export default class TopNavBar extends React.Component {
       <Navbar className="top-nav-bar">
         <Navbar.Header>
           <Navbar.Brand>
-            {/*<img src={'http://placehold.it/31x29&text=top_left.png'} alt="boohoo" className="img-responsive"/>*/}
-            ImgMissing
+            <div><img src={'/images/top_left.png'}/></div>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
 
-
         <Navbar.Collapse role="navigation" className="top-nav-bar">
           <Nav>
-            <Navbar.Form pullLeft>
+            <Navbar.Form className="manual-adjustment-1" pullLeft>
               <Input type="text" placeholder="Search for knowledge and truths"/>
               {' '}
               <Button type="submit">Submit</Button>
             </Navbar.Form>
-            <Navbar.Text> Sida Zhou </Navbar.Text>
-            <Link to="/"> <Navbar.Text> Home </Navbar.Text> </Link>
           </Nav>
 
           <Nav pullRight>
-            {/*<img src={'http://placehold.it/165x32&text=top_right.png'} alt="boohoo" className="img-responsive"/>*/}
-            <Navbar.Text> ImgMissing </Navbar.Text>
+            <Navbar.Text className="manual-adjustment-2"> Sida Zhou </Navbar.Text>
+            <Link to="/"> <Navbar.Text className="manual-adjustment-2"> Home </Navbar.Text> </Link>
+            <Navbar.Text>
+              <img src={'/images/top_right.png'}/>
+            </Navbar.Text>
+
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     );
   }
 }
+
+          // <Navbar.Text>
+          //   <img src={'/images/top_left.png'}/>
+          // </Navbar.Text>

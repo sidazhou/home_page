@@ -26,9 +26,8 @@ export default class SideNavBar extends React.Component {
         </LinkContainer>
 
         <Well>
-{/*          <img src="/images/sidazhou.png" alt="" width="120px" class="img-responsive img-rounded">
-*/}
-          <p> ImgMissing </p>
+          <img src={'/images/sidazhou.png'}/>
+
           <br/>
 
 
