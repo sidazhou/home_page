@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { Navbar, Nav, NavItem, Input, Button, Well } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 export default class SideNavBar extends React.Component {
   handleSelect() {}
@@ -8,11 +9,22 @@ export default class SideNavBar extends React.Component {
   render() {
     return (
       <Nav className="side-nav-bar" bsStyle="pills" stacked activeKey={1} onSelect={this.handleSelect}>
-        <NavItem eventKey={1} href="/about">About me</NavItem>
-        <NavItem eventKey={2} >Projects (Web)</NavItem>
-        <NavItem eventKey={3} >Projects (Science)</NavItem>
-        <NavItem eventKey={4} href="/#/contact">Contact me</NavItem>
-        {/*<Navbar.Text> <h1>ImgMissing</h1> </Navbar.Text>*/}
+        <LinkContainer to="/about">
+          <NavItem eventKey={1} >About me</NavItem>
+        </LinkContainer>
+
+        <LinkContainer to="/project/web">
+          <NavItem eventKey={2} >Projects (Web)</NavItem>
+        </LinkContainer>
+
+        <LinkContainer to="/project/science">
+          <NavItem eventKey={3} >Projects (Science)</NavItem>
+        </LinkContainer>
+
+        <LinkContainer to="/contact">
+          <NavItem eventKey={4} >Contact me</NavItem>
+        </LinkContainer>
+
         <Well>
 {/*          <img src="/images/sidazhou.png" alt="" width="120px" class="img-responsive img-rounded">
 */}
