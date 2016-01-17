@@ -8,6 +8,7 @@ export default class AboutMe extends React.Component {
 
   createLinkedinWidget() {
     return { __html:
+      '<script>delete IN;</script>' + // https://wordpress.org/support/topic/fix-for-linkedin-script-error-duplicate-injs-loaded
       '<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>' +
       '<script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/sida-zhou/69/766/42b" data-format="inline" data-related="false" data-width="400"></script>',
     };

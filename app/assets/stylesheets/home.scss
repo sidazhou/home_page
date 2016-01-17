@@ -18,8 +18,19 @@ body { /*global*/
     background: #45619d;
     margin-top: -6px;
 
+    button:focus {
+      outline: none;
+    }
+
     .navbar-text {
     color: white;
+    }
+
+    .search_form {
+      padding-left: 20px;
+      .form-control {
+        width: 230px;
+      }
     }
 
     .manual-adjustment-1 {
