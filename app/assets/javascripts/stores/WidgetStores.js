@@ -13,7 +13,7 @@ const counter = (state = 0, action) => {  // reducer
 const WidgetStores = createStore(counter, 2); // createStore(reducer, initialState)
 
 WidgetStores.subscribe(() => {
-  console.log(WidgetStores.getState());
+  // console.log(WidgetStores.getState());
 });
 
 export default WidgetStores;

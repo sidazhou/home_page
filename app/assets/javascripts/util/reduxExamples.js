@@ -15,7 +15,7 @@ const counter = (state = 0, action) => {  // reducer
 const store = createStore(counter, 2); // createStore(reducer, initialState)
 
 store.subscribe(() => {
-  console.log(store.getState());
+  // console.log(store.getState());
 });
 
 store.dispatch({ type: 'INCREMENT' });
@@ -82,30 +82,30 @@ const todoApp = combineReducers({
 const todoAppStore = createStore(todoApp); // createStore(reducer, initialState)
 
 todoAppStore.subscribe(() => {
-  console.log(todoAppStore.getState());
+  // console.log(todoAppStore.getState());
 });
 
-console.log('dispatching ADD_TODO');
+// console.log('dispatching ADD_TODO');
 todoAppStore.dispatch({
   type: 'ADD_TODO',
   id: 0,
   text: 'sdMYTEXT',
 });
 
-console.log('dispatching ADD_TODO');
+// console.log('dispatching ADD_TODO');
 todoAppStore.dispatch({
   type: 'ADD_TODO',
   id: 1,
   text: 'HALLOOOO',
 });
 
-console.log('dispatching SET_VISIBILITY_FILTER');
+// console.log('dispatching SET_VISIBILITY_FILTER');
 todoAppStore.dispatch({
   type: 'SET_VISIBILITY_FILTER',
   filter: 'sdtemp_DONT_SHOW_EM_ANYTHING',
 });
 
-console.log('dispatching TOGGLE_TODO');
+// console.log('dispatching TOGGLE_TODO');
 todoAppStore.dispatch({
   type: 'TOGGLE_TODO',
   id: 1,
