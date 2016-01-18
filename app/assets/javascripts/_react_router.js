@@ -34,7 +34,8 @@ ReactDOM.render(
       <Route path="about" component={AboutMe} />
       <Route path="contact" component={ContactMe} />
       <Route path="projects" component={ProjectsController}>
-        <Route path="web(/:id)" component={WebController} />
+        <Redirect from="web" to="web/1" />
+        <Route path="web/:id" component={WebController} />
         <Route path="science" component={ScienceController} />
       </Route>
 
