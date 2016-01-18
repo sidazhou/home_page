@@ -36,7 +36,9 @@ ReactDOM.render(
       <Route path="projects" component={ProjectsController}>
         <Redirect from="web" to="web/6" />
         <Route path="web/:id" component={WebController} />
-        <Route path="science" component={ScienceController} />
+
+        <Redirect from="science" to="science/1" />
+        <Route path="science/:id" component={ScienceController} />
       </Route>
 
       <Route path="*" component={PageNotFound} />

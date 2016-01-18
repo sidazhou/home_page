@@ -7,7 +7,6 @@ import data from './data.js';
 export default class WebController extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = { data: data.data }; // pretty ugly
   }
 
@@ -15,9 +14,6 @@ export default class WebController extends React.Component {
     return {__html: _.find(this.state.data, (project) => project.id === this.props.params.id ).html_body };
   };
 
-  componentDidMount() {
-    // debugger;
-  }
   render() {
     return (
       <div>
@@ -39,4 +35,3 @@ export default class WebController extends React.Component {
     );
   }
 }
-
