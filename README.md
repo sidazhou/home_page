@@ -19,6 +19,7 @@ Please see http://www.sidazhou.com
 
 
 == issues
-vertical alignment of brand logo? i didnt think so either
-apify projects (api returns title, thumbnail, and pure html with links working)
+sidenavbar active state not working
 implement paperclip
+apify projects (grape api returns title, thumbnail, and pure html with links working)
+vertical alignment of brand logo? i didnt think so either
