@@ -67,10 +67,15 @@ body { /*global*/
     overflow: auto;
     padding: 60px 45px 60px 45px;
     margin-right: 45px;
+
     hr {
       margin: 2px 0;
       width: 33%;
     }
+    button:focus {
+      outline: none;
+    }
+
   }
 }
 

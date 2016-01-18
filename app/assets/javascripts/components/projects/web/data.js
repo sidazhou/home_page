@@ -3,7 +3,25 @@ export default { data: [  // should be api call
       id: "6",
       title: "Sidebuy",
       html_body: `
-        <h1> Haloo </h1>
+        <br>
+          <p> Full stack development for www.sidebuy.com </p>
+          Sidebuy provides influencers and brands with a data-driven platform to facilitate the influencer marketing process.
+          Brands can create custom campaigns to leverage on influencers’ audience.
+          With Sidebuy's smart analytics, Brands can measure the impact and reach of their campaigns.
+          Influencers, can monetize their social influence.
+          <br>
+         (The site is powered by Ruby on Rails, ReactJS, Piwik Analytics, Heroku, ES6, Elasticsearch) <br> <br>
+
+         <a href="http://www.sidebuy.com">
+         <button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span> Link to site</button>
+         </a>
+         <hr width="100%" style="margin: 5px 0;">
+
+          <img src="/images/projects/web/sidebuy.png" width="70%" alt="" class="well"> <br>
+
+         <a href="http://www.sidebuy.com">
+         <button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span> Link to site</button>
+         </a>
       `
     },
 
@@ -19,7 +37,7 @@ export default { data: [  // should be api call
 
          <hr width="100%" style="margin: 5px 0;">
 
-          <img src="/images/projects/web/klue.png" width="70%" alt="" class="well"> <br>
+          <img src="/images/projects/web/klue.png" width="20%" alt="" class="well"> <br>
 
           <p>More info available upon request</p>
       `
@@ -87,7 +105,7 @@ export default { data: [  // should be api call
          <br>
          (The site is powered by interact.js, JQuery, PostgreSQL, Sinatra) <br> <br>
 
-         <a href="http://onlinepostit.herokuapp.com">
+         <a href="http://onlinepostit.herokuapp.com/example">
          <button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span> Link to site</button>
          </a>
          <hr width="100%" style="margin: 5px 0;">
