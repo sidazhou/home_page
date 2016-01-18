@@ -2,6 +2,7 @@ export default { data: [  // should be api call
     {
       id: "1",
       title: "Molecular Dynamics simulation",
+      img_url: "/images/projects/science/particle-simul-flow-chart.png",
       html_body: `
         <br>
         <p> Molecular Dynamics simulation of particles in a Zeeman Decelerator</p>
@@ -22,6 +23,7 @@ export default { data: [  // should be api call
     {
       id: "2",
       title: "Control panel",
+      img_url: "/images/projects/science/sdScope_Labview_frontend.png",
       html_body: `
         <br>
           <p> Labview control panel for physics experiment</p>
@@ -43,6 +45,7 @@ export default { data: [  // should be api call
     {
       id: "3",
       title: "AMO caculations",
+      img_url: "/images/projects/science/ch3-rempi-fig.png",
       html_body: `
         <br>
         <p> REMPI spectra calculation </p>
@@ -100,6 +103,7 @@ export default { data: [  // should be api call
     {
       id: "4",
       title: "Magnetic field simulation",
+      img_url: "/images/projects/science/coil_simul.png",
       html_body: `
         <br>
           <p> Magnetic field simulations of 3D geometries/components from the experiment </p>
@@ -120,6 +124,7 @@ export default { data: [  // should be api call
     {
       id: "5",
       title: "PhD Thesis",
+      img_url: "/images/projects/science/thesis.png",
       html_body: `
         <br>
         <p> Title: </p>
@@ -143,6 +148,7 @@ export default { data: [  // should be api call
     {
       id: "6",
       title: "Publications",
+      img_url: "/images/projects/science/thesis.png",
       html_body: `
         <br>
         <p> Publications: </p>

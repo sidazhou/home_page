@@ -2,6 +2,7 @@ export default { data: [  // should be api call
     {
       id: "6",
       title: "Sidebuy",
+      img_url: "/images/projects/web/sidebuy.png",
       html_body: `
         <br>
           <p> Full stack development for www.sidebuy.com </p>
@@ -28,6 +29,7 @@ export default { data: [  // should be api call
     {
       id: "5",
       title: "Klue",
+      img_url: "/images/projects/web/klue.png",
       html_body: `
         <br>
           <p> Web components for www.klue.in </p>
@@ -46,6 +48,7 @@ export default { data: [  // should be api call
     {
       id: "4",
       title: "Fullroster",
+      img_url: "/images/projects/web/fullroster.png",
       html_body: `
         <br>
           <p> Dashboard module for www.fullroster.ca </p>
@@ -75,6 +78,7 @@ export default { data: [  // should be api call
     {
       id: "2",
       title: "Ask Sida",
+      img_url: "/images/projects/web/sd-askme-project.png",
       html_body: `
         <br>
           <p> Better than Google, Ask Sida will allow you to get answers directly from Sida himself</p>
@@ -98,6 +102,7 @@ export default { data: [  // should be api call
     {
       id: "3",
       title: "Online Post It",
+      img_url: "/images/projects/web/onlinepostit.png",
       html_body: `
         <br>
           <p>Free online post it notes for everyday use, quick and simple!</p>
@@ -121,6 +126,7 @@ export default { data: [  // should be api call
     {
       id: "1",
       title: "Anti-Spoiler YouTube",
+      img_url: "/images/projects/web/sd-youtube-project.png",
       html_body: `
         <br>
         <p> An anti-spoiler site when watching tournament VODs on YouTube. </p>

@@ -1,5 +1,9 @@
 import React from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+
+import projects_web_data from './projects/web/data.js';
+import projects_science_data from './projects/science/data.js';
 
 export default class AboutMe extends React.Component {
   componentDidMount() {
@@ -31,10 +35,29 @@ export default class AboutMe extends React.Component {
         <br/>
 
         <hr/>
+
         <p>Projects (web): </p>
+        <div className="row">
+          { projects_web_data.data.map(project => (
+            <div className="col-md-4 thumbnail">
+                <LinkContainer key={`${project.id}`} to={`/projects/web/${project.id}`}>
+                  <img src={`${project.img_url}`} />
+                </LinkContainer>
+            </div>
+          ))}
+        </div>
+
         <hr/>
         <p>Projects (science): </p>
-
+        <div className="row">
+          { projects_science_data.data.map(project => (
+            <div className="col-md-4 thumbnail">
+                <LinkContainer key={`${project.id}`} to={`/projects/science/${project.id}`}>
+                  <img src={`${project.img_url}`} />
+                </LinkContainer>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

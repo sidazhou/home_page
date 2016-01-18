@@ -8,16 +8,6 @@ import SideNavBar from './SideNavBar.jsx';
 export default class AppController extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { message4widget3: ['default_state_1', 'default_state_2'] };
-  }
-
-
-  componentDidMount() {
-    $.get('api/v1/messages', function(data) {
-      this.setState({
-        message4widget3: [data[0].title, data[0].body], // for format look at the api
-      });
-    }.bind(this));
   }
 
   render() {
@@ -26,8 +16,7 @@ export default class AppController extends React.Component {
       <div className="row">
         <div className="col-md-12">
           <TopNavBar/>
-{/*          <Widgets message4widget3={this.state.message4widget3} />
-*/}        </div>
+        </div>
       </div>
 
       <div className="row">
