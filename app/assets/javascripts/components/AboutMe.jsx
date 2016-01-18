@@ -39,9 +39,9 @@ export default class AboutMe extends React.Component {
         <p>Projects (web): </p>
         <div className="row">
           { projects_web_data.data.map(project => (
-            <div className="col-md-4 thumbnail">
-                <LinkContainer key={`${project.id}`} to={`/projects/web/${project.id}`}>
-                  <img src={`${project.img_url}`} />
+            <div className="col-md-4 thumbnail" key={`${project.id}`}>
+                <LinkContainer to={`/projects/web/${project.id}`}>
+                  <img ref="sdimg" src={`${project.thumb_url}`} />
                 </LinkContainer>
             </div>
           ))}
@@ -51,9 +51,9 @@ export default class AboutMe extends React.Component {
         <p>Projects (science): </p>
         <div className="row">
           { projects_science_data.data.map(project => (
-            <div className="col-md-4 thumbnail">
-                <LinkContainer key={`${project.id}`} to={`/projects/science/${project.id}`}>
-                  <img src={`${project.img_url}`} />
+            <div className="col-md-4 thumbnail" key={`${project.id}`}>
+                <LinkContainer to={`/projects/science/${project.id}`}>
+                  <img src={`${project.thumb_url}`} />
                 </LinkContainer>
             </div>
           ))}

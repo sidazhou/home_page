@@ -59,6 +59,13 @@ body { /*global*/
       width: 100%;
       margin: 10px 0;
     }
+
+    .thumbnail {
+      cursor: pointer;
+      width: 235px;
+      height: 135px;
+      margin: 5px;
+    }
   }
 
   .jumbotron {
