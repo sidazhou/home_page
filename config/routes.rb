@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   mount API::Root => '/'
 
+  get '/*any', to: 'welcome#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
