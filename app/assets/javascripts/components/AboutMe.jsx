@@ -26,7 +26,7 @@ export default class AboutMe extends React.Component {
         <div id="linkedin_widget"></div>
         <br/>
 
-        &nbsp;&nbsp;&nbsp;<a href="https://www.dropbox.com/s/wd7eg4w252z68kx/Sida_Zhou_resume_v1.pdf?dl=0">
+        &nbsp;&nbsp;&nbsp;<a href="https://www.dropbox.com/s/psqt1z7z9qsipvv/Sida_Zhou_resume.pdf?dl=0">
           <Button bsStyle="info">
             <Glyphicon glyph="link"/> My Resume
           </Button>
