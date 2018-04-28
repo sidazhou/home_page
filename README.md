@@ -10,6 +10,16 @@
 
 visit `localhost:3000`
 
+== deploying to heroku
+# Verify new remote
+`git remote -v`
+`git remote add heroku git@heroku.com:sd-home-page-project.git`
+`git remote add origin git@github.com:sidazhou/home_page.git`
+
+`git add README.md`
+`git commit -m "updated README.md"`
+`git push heroku master`
+`git push origin master`
 
 == README
 
