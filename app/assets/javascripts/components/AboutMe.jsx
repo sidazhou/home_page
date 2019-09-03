@@ -4,6 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 import projects_web_data from './projects/web/data.js';
 import projects_science_data from './projects/science/data.js';
+import projects_datasci_data from './projects/datasci/data.js';
 
 export default class AboutMe extends React.Component {
   componentDidMount() {
@@ -35,8 +36,21 @@ export default class AboutMe extends React.Component {
         <br/>
 
         <hr/>
+        <hr/>
+        <p>Projects (Data Science): </p>
+        <div className="row">
+          { projects_datasci_data.data.map(project => (
+            <div className="col-md-4 thumbnail" key={`${project.id}`}>
+                <LinkContainer to={`/projects/web/${project.id}`}>
+                  <img ref="sdimg" src={`${project.thumb_url}`} />
+                </LinkContainer>
+            </div>
+          ))}
+        </div>
 
-        <p>Projects (web): </p>
+        <hr/>
+        <hr/>
+        <p>Projects (Web): </p>
         <div className="row">
           { projects_web_data.data.map(project => (
             <div className="col-md-4 thumbnail" key={`${project.id}`}>
@@ -48,7 +62,8 @@ export default class AboutMe extends React.Component {
         </div>
 
         <hr/>
-        <p>Projects (science): </p>
+        <hr/>
+        <p>Projects (Science): </p>
         <div className="row">
           { projects_science_data.data.map(project => (
             <div className="col-md-4 thumbnail" key={`${project.id}`}>
