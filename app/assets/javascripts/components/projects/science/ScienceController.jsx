@@ -4,7 +4,7 @@ import { Nav, NavItem, Input, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import data from './data.js';
 
-export default class WebController extends React.Component {
+export default class ScienceController extends React.Component {
   constructor(props) {
     super(props);
     this.state = { data: data.data }; // pretty ugly
