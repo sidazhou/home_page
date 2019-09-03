@@ -41,7 +41,7 @@ export default class AboutMe extends React.Component {
         <div className="row">
           { projects_datasci_data.data.map(project => (
             <div className="col-md-4 thumbnail" key={`${project.id}`}>
-                <LinkContainer to={`/projects/web/${project.id}`}>
+                <LinkContainer to={`/projects/datasci/${project.id}`}>
                   <img ref="sdimg" src={`${project.thumb_url}`} />
                 </LinkContainer>
             </div>
