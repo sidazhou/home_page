@@ -11,16 +11,20 @@ export default class SideNavBar extends React.Component {
           <NavItem eventKey={1} >About me</NavItem>
         </LinkContainer>
 
+        <LinkContainer to="/projects/datasci">
+          <NavItem eventKey={2} >Projects (Data Science)</NavItem>
+        </LinkContainer>
+
         <LinkContainer to="/projects/web">
-          <NavItem eventKey={2} >Projects (Web)</NavItem>
+          <NavItem eventKey={3} >Projects (Web)</NavItem>
         </LinkContainer>
 
         <LinkContainer to="/projects/science">
-          <NavItem eventKey={3} >Projects (Science)</NavItem>
+          <NavItem eventKey={4} >Projects (Science)</NavItem>
         </LinkContainer>
 
         <LinkContainer to="/contact">
-          <NavItem eventKey={4} >Contact me</NavItem>
+          <NavItem eventKey={5} >Contact me</NavItem>
         </LinkContainer>
 
         <Well>
@@ -35,7 +39,7 @@ export default class SideNavBar extends React.Component {
           <hr/>
 
           <b>Phone</b><br/>
-          +1 778 321 7954<br/>
+          +86 185 1065 1801<br/>
           <hr/>
         </Well>
       </Nav>

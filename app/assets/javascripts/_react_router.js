@@ -8,6 +8,7 @@ import AboutMe from './components/AboutMe.jsx';
 import ContactMe from './components/ContactMe.jsx';
 
 import ProjectsController from './components/projects/ProjectsController.jsx';
+import DatasciController from './components/projects/datasci/DatasciController.jsx';
 import WebController from './components/projects/web/WebController.jsx';
 import ScienceController from './components/projects/science/ScienceController.jsx';
 
@@ -34,6 +35,9 @@ ReactDOM.render(
       <Route path="about" component={AboutMe} />
       <Route path="contact" component={ContactMe} />
       <Route path="projects" component={ProjectsController}>
+        <Redirect from="datasci" to="datasci/1" />
+        <Route path="datasci/:id" component={DatasciController} />
+
         <Redirect from="web" to="web/6" />
         <Route path="web/:id" component={WebController} />
 
