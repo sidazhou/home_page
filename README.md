@@ -59,9 +59,9 @@ public/images/*.png
 + AboutMe.jsx
 
 ### thumbnails
-Use screenshot to create png, and ImageMagik for thumbnails:
+Use screenshot to create png, and ImageMagik for thumbnails (fixed height 125px):
 `mkdir thumb`
-`mogrify  -format gif -path thumb -thumbnail *.png`
+`mogrify  -format png -path thumb -thumbnail x125 *.png`
 
 == issues
 sidenavbar active state not working
