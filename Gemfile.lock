@@ -99,7 +99,7 @@ GEM
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     pg (0.18.4)
-    rack (1.6.4)
+    rack (1.6.12)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-mount (0.8.3)
